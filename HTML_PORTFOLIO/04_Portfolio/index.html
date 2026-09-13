@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M Indu - MCA Student and Front-End & Web Developer Portfolio">
+  <title>M Indu | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">
+      <span class="brand-dot">M</span> Indu
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-icon"><span></span><span></span><span></span></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero-section">
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-7 hero-text order-2 order-lg-1">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">M Indu</h1>
+
+        <div class="hero-role">
+          <span class="role-static">I'm a </span>
+          <span class="typed-text" id="typed"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-tagline">
+          Front-End &amp; Web Developer focused on building responsive,
+          user-friendly web experiences.
+        </p>
+
+        <div class="hero-btns d-flex gap-3 flex-wrap mt-4">
+          <a href="#projects" class="btn btn-primary-custom">
+            <i class="bi bi-code-slash me-2"></i>View Projects
+          </a>
+
+          <a href="/assets/images/M_Indu_Resume.pdf" class="btn btn-outline-custom" download>
+            <i class="bi bi-download me-2"></i>Download Resume
+          </a>
+        </div>
+
+        <div class="hero-social mt-4">
+          <a href="https://www.linkedin.com/in/m-indu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/MInduDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a href="mailto:maddhi.indu@gmail.com" aria-label="Email">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 hero-img-col order-1 order-lg-2">
+        <div class="profile-wrapper">
+          <div class="profile-ring"></div>
+
+          <img src="/assets/images/Profile1.jpeg" alt="M Indu" class="profile-img">
+
+          <div class="profile-badge">
+            <i class="bi bi-code-slash"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    <p>Scroll Down</p>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get to know me</span>
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+    </div>
+
+    <div class="row align-items-center g-5 mt-2">
+      <div class="col-lg-5">
+        <div class="about-img-wrap">
+          <img src="/assets/images/Profile1.jpeg" alt="M Indu" class="about-img">
+
+          <div class="about-exp-badge">
+            <span class="exp-number">8.80</span>
+            <span class="exp-label">CGPA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="about-content">
+          <h3 class="about-subtitle">MCA Student | Front-End &amp; Web Developer</h3>
+
+          <p class="about-text">
+            I'm an <strong>MCA student</strong> with a strong interest in
+            <strong>Front-End and Web Development</strong>. I enjoy building
+            responsive, user-friendly web applications and practical digital experiences.
+          </p>
+
+          <p class="about-text">
+            My technical skills include <strong>React.js, JavaScript, HTML5,
+            CSS3, Bootstrap, Python, SQL, MongoDB, MySQL</strong>, along with
+            <strong>Node.js and Express.js</strong> as I continue learning the MERN stack.
+          </p>
+
+          <p class="about-text">
+            I also have internship experience in full-stack web development,
+            where I worked on a Travel and Tourism platform using HTML, CSS,
+            Bootstrap, JavaScript, PHP, and MySQL.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="bi bi-mortarboard-fill"></i>
+              <div>
+                <strong>Education</strong>
+                <span>MCA — ITM University, Raipur | 2026</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Chhattisgarh, India</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div>
+                <strong>Email</strong>
+                <span>maddhi.indu@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-telephone-fill"></i>
+              <div>
+                <strong>Phone</strong>
+                <span>+91-7489859587</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="strength-tags mt-4">
+            <span class="strength-tag">🎯 Problem Solver</span>
+            <span class="strength-tag">💡 Fast Learner</span>
+            <span class="strength-tag">🤝 Team Player</span>
+            <span class="strength-tag">🎨 UI Enthusiast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section-pad skills-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What I know</span>
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+    </div>
+
+    <div class="row g-5 mt-2">
+      <div class="col-lg-6">
+        <h4 class="skills-cat-title">
+          <i class="bi bi-code-slash me-2"></i>Technical Skills
+        </h4>
+
+        <div class="skill-bars">
+          <div class="skill-bar-item" data-pct="85">
+            <div class="skill-info">
+              <span>HTML5 &amp; CSS3</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item" data-pct="78">
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item" data-pct="80">
+            <div class="skill-info">
+              <span>React.js</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item" data-pct="72">
+            <div class="skill-info">
+              <span>Bootstrap</span>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item" data-pct="60">
+            <div class="skill-info">
+              <span>Node.js / Express.js</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item" data-pct="55">
+            <div class="skill-info">
+              <span>MongoDB</span>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item" data-pct="50">
+            <div class="skill-info">
+              <span>Python &amp; SQL</span>
+              <span class="skill-pct">50%</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h4 class="skills-cat-title">
+          <i class="bi bi-person-check me-2"></i>Soft Skills
+        </h4>
+
+        <div class="soft-skills-grid">
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon"><i class="bi bi-lightbulb"></i></div>
+            <h6>Problem Solving</h6>
+            <div class="soft-level">
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon"><i class="bi bi-people"></i></div>
+            <h6>Team Collaboration</h6>
+            <div class="soft-level">
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span>
+            </div>
+          </div>
+
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h6>Fast Learning</h6>
+            <div class="soft-level">
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span>
+            </div>
+          </div>
+
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon"><i class="bi bi-chat-dots"></i></div>
+            <h6>Communication</h6>
+            <div class="soft-level">
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon"><i class="bi bi-clock"></i></div>
+            <h6>Time Management</h6>
+            <div class="soft-level">
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="soft-skill-card">
+            <div class="soft-skill-icon"><i class="bi bi-brush"></i></div>
+            <h6>Creative Design</h6>
+            <div class="soft-level">
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot active"></span><span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="skills-cat-title mt-4">
+          <i class="bi bi-tools me-2"></i>Tools &amp; Technologies
+        </h4>
+
+        <div class="tools-wrap">
+          <span class="tool-pill"><i class="bi bi-git me-1"></i>Git &amp; GitHub</span>
+          <span class="tool-pill"><i class="bi bi-window me-1"></i>VS Code</span>
+          <span class="tool-pill">React.js</span>
+          <span class="tool-pill">MongoDB</span>
+          <span class="tool-pill">Node.js</span>
+          <span class="tool-pill">Express.js</span>
+          <span class="tool-pill">Python</span>
+          <span class="tool-pill">SQL</span>
+          <span class="tool-pill">HTML5</span>
+          <span class="tool-pill">CSS3</span>
+          <span class="tool-pill">Bootstrap</span>
+          <span class="tool-pill">MySQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates" class="section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My achievements</span>
+      <h2 class="section-title">Certifi<span class="highlight">cates</span></h2>
+    </div>
+
+    <div class="cert-zigzag mt-5">
+
+      <!-- Certificate 01 -->
+      <div class="cert-row row align-items-center g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="cert-img-wrap"
+               data-modal-src="/assets/images/Digital_shakha_certificate.jpeg"
+               data-modal-title="Full Stack Development Certificate">
+            <img src="/assets/images/Digital_shakha_certificate.jpeg"
+                 alt="Full Stack Development Certificate"
+                 class="cert-img">
+            <div class="cert-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="cert-detail">
+            <span class="cert-number">01</span>
+            <h4>Full Stack Development Certificate</h4>
+            <p class="cert-org">
+              <i class="bi bi-building me-2"></i>Digital Shakha, Bhilai
+            </p>
+            <p class="cert-desc">
+              Completed full stack development training covering HTML,
+              CSS, Bootstrap, JavaScript, PHP, and MySQL.
+            </p>
+            <span class="cert-badge">Completed · 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 02 -->
+      <div class="cert-row cert-reverse row align-items-center g-4 mb-5">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class="cert-detail">
+            <span class="cert-number">02</span>
+            <h4>SOAR – AI to be Aware</h4>
+            <p class="cert-org">
+              <i class="bi bi-microsoft me-2"></i>Microsoft &amp; NCVET / Skill India
+            </p>
+            <p class="cert-desc">
+              AI awareness certification through Microsoft's SOAR program,
+              assessed and recognised by NCVET.
+            </p>
+            <span class="cert-badge">Issued · 2026</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2">
+          <div class="cert-img-wrap cert-img-right"
+               data-modal-src="/assets/images/SOAR_AI.png"
+               data-modal-title="SOAR – AI to be Aware">
+            <img src="/assets/images/SOAR_AI.png"
+                 alt="SOAR – AI to be Aware"
+                 class="cert-img">
+            <div class="cert-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 03 -->
+      <div class="cert-row row align-items-center g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="cert-img-wrap"
+               data-modal-src="/assets/images/Talks_india_certificate.jpeg"
+               data-modal-title="Certificate of Appreciation">
+            <img src="/assets/images/Talks_india_certificate.jpeg"
+                 alt="Certificate of Appreciation"
+                 class="cert-img">
+            <div class="cert-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="cert-detail">
+            <span class="cert-number">03</span>
+            <h4>Certificate of Appreciation</h4>
+            <p class="cert-org">
+              <i class="bi bi-globe me-2"></i>NeGD · Ministry of Electronics &amp; IT (MeitY)
+            </p>
+            <p class="cert-desc">
+              Certificate of appreciation for participation in the
+              Digital India Talk Show and Digital India initiatives
+              at IIIT Naya Raipur.
+            </p>
+            <span class="cert-badge">Awarded · 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 04 -->
+      <div class="cert-row cert-reverse row align-items-center g-4 mb-5">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class="cert-detail">
+            <span class="cert-number">04</span>
+            <h4>National Level Online Workshop Certificate</h4>
+            <p class="cert-org">
+              <i class="bi bi-mortarboard me-2"></i>
+              National Institute of Technology (NIT) Raipur
+            </p>
+            <p class="cert-desc">
+              Workshop on Next Generation Trends in AI and Scientific
+              Computing with hands-on using Python.
+            </p>
+            <span class="cert-badge">Completed · 2026</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2">
+          <div class="cert-img-wrap cert-img-right"
+               data-modal-src="/assets/images/NIT.png"
+               data-modal-title="National Level Online Workshop Certificate">
+            <img src="/assets/images/NIT.jpeg"
+                 alt="National Level Online Workshop Certificate - NIT Raipur"
+                 class="cert-img">
+            <div class="cert-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 05 -->
+      <div class="cert-row row align-items-center g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="cert-img-wrap"
+               data-modal-src="/assets/images/My_Bharat_certificate.png"
+               data-modal-title="My Bharat Budget Quest 2026">
+            <img src="/assets/images/My_Bharat_certificate.jpeg"
+                 alt="My Bharat Budget Quest 2026 Certificate"
+                 class="cert-img">
+            <div class="cert-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="cert-detail">
+            <span class="cert-number">05</span>
+            <h4>Certificate of Participation</h4>
+            <p class="cert-org">
+              <i class="bi bi-award me-2"></i>Ministry of Youth Affairs &amp; Sports
+            </p>
+            <p class="cert-desc">
+              Successfully participated in the online quiz on
+              <strong>MY Bharat Budget Quest 2026</strong>,
+              conducted on MYBharat. The certificate recognises
+              participation and contribution towards the
+              Viksit Bharat initiative.
+            </p>
+            <span class="cert-badge">Participated · 11 February 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="cert-modal" id="certModal" aria-hidden="true">
+  <div class="cert-modal-inner">
+    <button class="cert-modal-close" type="button" id="modalClose" aria-label="Close certificate">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <img src="" id="modalImg" alt="Certificate preview">
+
+    <div id="modalPlaceholder" class="modal-placeholder">
+      <i class="bi bi-award"></i>
+      <p id="modalTitle"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+<section id="projects" class="section-pad projects-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What I've built</span>
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+    </div>
+
+    <div class="row g-4 mt-2">
+
+      <!-- Project 01 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card">
+          <div class="project-card-top project-theme-purple">
+            <img src="/assets/images/Shram_Setu.png"
+                 alt="Smart Shram Setu"
+                 class="project-hero-img">
+
+            <span class="project-year">Full Stack</span>
+          </div>
+
+          <div class="project-card-body">
+            <h5>SMART SHRAM SETU</h5>
+            <p>
+              Digital employment and workforce platform connecting
+              workers and employers with authentication, job management,
+              multilingual support, and voice-assisted navigation.
+            </p>
+
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
+              <span>REST API</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://github.com/MInduDev" target="_blank"
+               rel="noopener noreferrer" class="btn-proj">
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card">
+          <div class="project-card-top project-theme-pink">
+            
+            <img src="/assets/images/Avsar.png"
+                 alt="AVSAR Animal Welfare Platform"
+                 class="project-hero-img">
+            
+            <span class="project-year">Full Stack</span>
+          </div>
+
+          <div class="project-card-body">
+            <h5>AVSAR</h5>
+            <p>
+              Animal Welfare Reporting &amp; Rescue Platform for
+              reporting animal abuse and rescue requests, with secure
+              image uploads and membership management.
+            </p>
+
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://github.com/MInduDev" target="_blank"
+               rel="noopener noreferrer" class="btn-proj">
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card">
+          <div class="project-card-top project-theme-blue">
+            <img src="/assets/images/zaayaka.png"
+                 alt="Zaayaka Restaurant Website"
+                 class="project-hero-img">
+            <span class="project-year">Front-End</span>
+          </div>
+
+          <div class="project-card-body">
+            <h5>ZAAYAKA</h5>
+            <p>
+              Responsive restaurant website with interactive menu
+              sections, attractive UI, and smooth navigation across
+              desktop and mobile devices.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://github.com/MInduDev" target="_blank"
+               rel="noopener noreferrer" class="btn-proj">
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 04 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card">
+          <div class="project-card-top project-theme-orange">
+            <img src="/assets/images/travel_tourism.png"
+                 alt="Travel and Tourism Platform"
+                 class="project-hero-img">
+            <span class="project-year">Internship</span>
+          </div>
+
+          <div class="project-card-body">
+            <h5>Travel &amp; Tourism Platform</h5>
+            <p>
+              Web-based Travel and Tourism platform developed during
+              internship, including responsive UI and destination
+              filtering by location, budget, and travel preferences.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://github.com/MInduDev" target="_blank"
+               rel="noopener noreferrer" class="btn-proj">
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section-pad contact-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Let's talk</span>
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+    </div>
+
+    <div class="row g-5 mt-2">
+      <div class="col-lg-5">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm open to opportunities and collaborations in Front-End
+            and Web Development. Feel free to reach out.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:maddhi.indu@gmail.com" class="contact-link-item">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>maddhi.indu@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="tel:+91-7489859587" class="contact-link-item">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <span>+91-7489859587</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/m-indu" target="_blank"
+               rel="noopener noreferrer" class="contact-link-item">
+              <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/m-indu</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/MInduDev" target="_blank"
+               rel="noopener noreferrer" class="contact-link-item">
+              <div class="contact-icon"><i class="bi bi-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/MInduDev</span>
+              </div>
+            </a>
+
+            <div class="contact-link-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>Chhattisgarh, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" class="form-input"
+                       placeholder="Your name" autocomplete="name">
+                <span class="form-error" id="fnameErr"></span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="femail">Your Email</label>
+                <input type="email" id="femail" class="form-input"
+                       placeholder="you@example.com" autocomplete="email">
+                <span class="form-error" id="femailErr"></span>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label for="fsubject">Subject</label>
+                <input type="text" id="fsubject" class="form-input"
+                       placeholder="Job Opportunity / Collaboration">
+                <span class="form-error" id="fsubjectErr"></span>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label for="fmessage">Message</label>
+                <textarea id="fmessage" class="form-input" rows="5"
+                          placeholder="Your message here..."></textarea>
+                <span class="form-error" id="fmessageErr"></span>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary-custom w-100 send-btn">
+                <span class="btn-text">
+                  <i class="bi bi-send me-2"></i>Send Message
+                </span>
+
+                <span class="btn-success" hidden>
+                  <i class="bi bi-check-circle me-2"></i>Opening Email...
+                </span>
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        © 2026 <span>M Indu</span>. Crafted with
+        <i class="bi bi-heart-fill text-danger"></i> in Chhattisgarh.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/m-indu" target="_blank"
+           rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/MInduDev" target="_blank"
+           rel="noopener noreferrer" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="mailto:maddhi.indu@gmail.com" aria-label="Email">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back To Top -->
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
