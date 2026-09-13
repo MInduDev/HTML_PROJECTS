@@ -1,0 +1,1046 @@
+/* =========================================================
+   GENERAL STYLES
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   COMMON COLORS
+========================================================= */
+
+:root {
+    --black: #111111;
+    --dark-black: #0b0b0b;
+    --gold: #d6a928;
+    --light-gold: #f2d675;
+    --teal: #176f75;
+    --dark-teal: #075555;
+    --cream: #f8f5ec;
+    --light-gray: #f5f5f5;
+    --text-gray: #666666;
+    --border-color: #e5e5e5;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.my-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.navbar-brand:hover {
+    color: var(--gold);
+}
+
+.my-nav-links {
+    gap: 8px;
+}
+
+.my-nav-links .nav-link {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+.my-nav-links .nav-link:hover,
+.my-nav-links .nav-link.active {
+    color: var(--gold);
+}
+
+.navbar-toggler {
+    border: 1px solid #dddddd;
+    padding: 6px 9px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn-dark-teal {
+    background-color: var(--dark-teal);
+    color: #ffffff;
+    border: 1px solid var(--dark-teal);
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-dark-teal:hover {
+    background-color: var(--black);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-dark-teal i {
+    margin-left: 5px;
+}
+
+.btn-outline-link {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.btn-outline-link:hover {
+    color: var(--gold);
+}
+
+.btn-outline-link i {
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   DARK MODE BUTTON
+========================================================= */
+
+.mode-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.mode-btn:hover {
+    background-color: var(--black);
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section {
+    padding: 90px 0 60px;
+    background-color: #ffffff;
+}
+
+.eyebrow-text {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero-heading {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1.08;
+    font-weight: 700;
+    color: var(--black);
+    max-width: 650px;
+}
+
+.text-teal {
+    color: var(--teal);
+}
+
+.hero-para {
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 620px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   HERO PHOTO
+========================================================= */
+
+.hero-photo-wrap {
+    position: relative;
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.hero-photo-wrap::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: var(--gold);
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.hero-photo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    display: block;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.available-badge {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 2;
+    background-color: var(--black);
+    color: #ffffff;
+    padding: 9px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.available-badge i {
+    color: #65c466;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   HERO STATS
+========================================================= */
+
+.hero-stats {
+    margin-top: 30px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-box > i {
+    font-size: 24px;
+    color: var(--gold);
+}
+
+.stat-box strong {
+    display: block;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.stat-box p {
+    color: var(--text-gray);
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY STRIP
+========================================================= */
+
+.tech-strip {
+    margin-top: 80px;
+    padding: 25px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.small-label {
+    color: #888888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.tech-names span {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tech-names span::after {
+    content: "•";
+    color: var(--gold);
+    margin-left: 18px;
+}
+
+.tech-names span:last-child::after {
+    display: none;
+}
+
+
+/* =========================================================
+   SECTION COMMON
+========================================================= */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.bg-light-cream {
+    background-color: var(--cream);
+}
+
+.section-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 12px;
+}
+
+.heading-underline {
+    width: 55px;
+    height: 4px;
+    background-color: var(--gold);
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+#about .hero-para {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.service-card {
+    height: 100%;
+    background-color: #ffffff;
+    padding: 30px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5edcf;
+    color: var(--dark-teal);
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.service-card h5 {
+    color: var(--black);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--text-gray);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SKILLS SECTION
+========================================================= */
+
+#skills .service-card {
+    background-color: #ffffff;
+}
+
+#skills .service-icon {
+    background-color: var(--black);
+    color: var(--light-gold);
+}
+
+
+/* =========================================================
+   PROJECT FILTER BUTTONS
+========================================================= */
+
+.filter-buttons {
+    margin-top: 35px;
+}
+
+.filter-btn {
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    color: #555555;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--black);
+    color: #ffffff;
+    border-color: var(--black);
+}
+
+
+/* =========================================================
+   PROJECT CARDS
+========================================================= */
+
+.project-card {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.project-thumb {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    color: #ffffff;
+}
+
+.thumb-1 {
+    background: linear-gradient(135deg, #075555, #176f75);
+}
+
+.thumb-2 {
+    background: linear-gradient(135deg, #222222, #555555);
+}
+
+.thumb-3 {
+    background: linear-gradient(135deg, #b28a1f, #d6a928);
+}
+
+.project-info {
+    padding: 22px;
+}
+
+.project-info h6 {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.project-info p {
+    color: var(--text-gray);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.project-info small {
+    color: var(--teal);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PROCESS SECTION
+========================================================= */
+
+.process-row {
+    position: relative;
+}
+
+.process-step {
+    padding: 10px 15px;
+}
+
+.process-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--light-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.process-number {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.process-step h6 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.process-text {
+    color: var(--text-gray);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CERTIFICATION CARDS
+========================================================= */
+
+.cert-card {
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px 20px;
+    transition: 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+}
+
+.cert-card > i {
+    color: var(--gold);
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.cert-card h6 {
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cert-card p {
+    color: var(--text-gray);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   STATS BANNER
+========================================================= */
+
+.stats-banner {
+    background-color: var(--black);
+    color: #ffffff;
+    padding: 55px 0;
+}
+
+.stats-banner i {
+    color: var(--light-gold);
+    font-size: 28px;
+}
+
+.stats-banner h3 {
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 32px;
+    margin: 8px 0 3px;
+}
+
+.stats-banner p {
+    color: #bbbbbb;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.contact-info-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.contact-info-list li i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f5edcf;
+    color: var(--dark-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+.contact-form {
+    background-color: var(--cream);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.contact-form .form-control {
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    padding: 12px 14px;
+    font-size: 13px;
+    background-color: #ffffff;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(214, 169, 40, 0.12);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.my-footer {
+    background-color: var(--dark-black);
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.footer-brand {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.my-footer p {
+    color: #999999;
+    font-size: 12px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #bbbbbb;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--light-gold);
+}
+
+.footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-left: 7px;
+    border: 1px solid #444444;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--black);
+}
+
+.footer-line {
+    border-color: #333333;
+}
+
+.footer-copy {
+    padding-bottom: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .my-nav-links {
+        gap: 0;
+        margin: 20px 0 !important;
+    }
+
+    .my-nav-links .nav-link {
+        padding: 10px 0;
+    }
+
+    .hero-section {
+        padding-top: 60px;
+    }
+
+    .hero-heading {
+        font-size: 48px;
+    }
+
+    .hero-photo-wrap {
+        margin-top: 50px;
+        max-width: 400px;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .text-md-end {
+        text-align: left !important;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .my-navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 26px;
+    }
+
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+
+    .hero-section {
+        padding: 55px 0 40px;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+    }
+
+    .hero-para {
+        font-size: 14px;
+    }
+
+    .hero-photo {
+        height: 430px;
+    }
+
+    .available-badge {
+        font-size: 10px;
+        padding: 8px 11px;
+    }
+
+    .tech-strip {
+        margin-top: 55px;
+    }
+
+    .tech-names {
+        gap: 12px !important;
+    }
+
+    .tech-names span {
+        font-size: 12px;
+    }
+
+    .tech-names span::after {
+        margin-left: 10px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        font-size: 34px;
+    }
+
+    .hero-stats {
+        gap: 20px !important;
+    }
+
+    .stat-box {
+        min-width: 90px;
+    }
+
+    .project-thumb {
+        height: 190px;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero-heading {
+        font-size: 35px;
+    }
+
+    .hero-photo {
+        height: 380px;
+    }
+
+    .hero-photo-wrap {
+        padding: 10px;
+    }
+
+    .hero-photo-wrap::before {
+        width: 90%;
+        height: 90%;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .btn-dark-teal {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .hero-stats {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-banner {
+        padding: 40px 0;
+    }
+
+    .stats-banner h3 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode {
+    background-color: #101010;
+    color: #eeeeee;
+}
+
+body.dark-mode .my-navbar {
+    background-color: #101010;
+    border-color: #292929;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .my-nav-links .nav-link {
+    color: #eeeeee;
+}
+
+body.dark-mode .my-nav-links .nav-link:hover,
+body.dark-mode .my-nav-links .nav-link.active {
+    color: var(--light-gold);
+}
+
+body.dark-mode .mode-btn {
+    background-color: #202020;
+    border-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .hero-section {
+    background-color: #101010;
+}
+
+body.dark-mode .hero-heading,
+body.dark-mode .section-heading,
+body.dark-mode .stat-box strong,
+body.dark-mode .service-card h5,
+body.dark-mode .project-info h6,
+body.dark-mode .process-step h6,
+body.dark-mode .cert-card h6 {
+    color: #eeeeee;
+}
+
+body.dark-mode .hero-para,
+body.dark-mode .service-card p,
+body.dark-mode .project-info p,
+body.dark-mode .process-text,
+body.dark-mode .cert-card p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .tech-strip {
+    border-color: #333333;
+}
+
+body.dark-mode .tech-names span {
+    color: #dddddd;
+}
+
+body.dark-mode .bg-light-cream {
+    background-color: #171717;
+}
+
+body.dark-mode .service-card,
+body.dark-mode .project-card,
+body.dark-mode .cert-card {
+    background-color: #1d1d1d;
+    border-color: #333333;
+}
+
+body.dark-mode .filter-btn {
+    background-color: #1d1d1d;
+    border-color: #444444;
+    color: #dddddd;
+}
+
+body.dark-mode .filter-btn:hover,
+body.dark-mode .filter-btn.active {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: #111111;
+}
+
+body.dark-mode .contact-form {
+    background-color: #1d1d1d;
+    border-color: #333333;
+}
+
+body.dark-mode .contact-form .form-control {
+    background-color: #111111;
+    border-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .contact-form .form-control::placeholder {
+    color: #888888;
+}
+
+body.dark-mode .contact-info-list li {
+    color: #bbbbbb;
+}
+
+body.dark-mode .btn-outline-link {
+    color: #eeeeee;
+}
+
+body.dark-mode .btn-outline-link:hover {
+    color: var(--light-gold);
+}
