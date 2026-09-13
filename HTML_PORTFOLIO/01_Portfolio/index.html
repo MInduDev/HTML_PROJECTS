@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mindu | Front-End & Web Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg my-navbar sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                Mindu.
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav mx-auto my-nav-links">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">
+                            Process
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="d-flex align-items-center gap-2">
+
+                    <a
+                        href="#contact"
+                        class="btn btn-dark-teal"
+                    >
+                        Let's Talk
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+
+                    <button
+                        id="darkModeBtn"
+                        class="mode-btn"
+                        title="Toggle dark mode"
+                    >
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Hero Content -->
+
+                <div class="col-lg-6">
+
+                    <p class="eyebrow-text">
+                        Hi, I'm Indu
+                    </p>
+
+
+                    <h1 class="hero-heading">
+
+                        I Build Clean, Modern &
+                        Purposeful
+
+                        <span class="text-teal">
+                            Web Experiences.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-para">
+
+                        MCA graduate and aspiring Front-End Developer
+                        focused on building responsive, user-friendly
+                        websites using HTML, CSS, JavaScript, React.js
+                        and modern web technologies.
+
+                    </p>
+
+
+                    <div class="d-flex align-items-center gap-4 flex-wrap mb-4">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-dark-teal"
+                        >
+                            View My Work
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+
+                        <a
+                            href="M_Indu_Resume.pdf"
+                            class="btn btn-outline-link"
+                            download
+                        >
+                            <i class="bi bi-download"></i>
+                            Download Resume
+                        </a>
+
+                    </div>
+
+
+                    <!-- Hero Stats -->
+
+                    <div class="d-flex flex-wrap gap-4 hero-stats">
+
+                        <div class="stat-box">
+
+                            <i class="bi bi-code-square"></i>
+
+                            <div>
+
+                                <strong>3+</strong>
+
+                                <p>
+                                    Projects Built
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-box">
+
+                            <i class="bi bi-mortarboard"></i>
+
+                            <div>
+
+                                <strong>MCA</strong>
+
+                                <p>
+                                    Graduate
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-box">
+
+                            <i class="bi bi-patch-check"></i>
+
+                            <div>
+
+                                <strong>4</strong>
+
+                                <p>
+                                    Certifications
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Hero Photo -->
+
+                <div class="col-lg-6">
+
+                    <div class="hero-photo-wrap">
+
+                        <span class="available-badge">
+
+                            <i class="bi bi-dot"></i>
+                            Open to Opportunities
+
+                        </span>
+
+
+                        <img
+                            src="/images/PROFILE.jpeg"
+                            alt="Photo of Indu"
+                            class="hero-photo"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Technology Strip -->
+
+            <div class="tech-strip">
+
+                <p class="small-label">
+                    Technologies I Work With
+                </p>
+
+
+                <div class="d-flex flex-wrap gap-4 tech-names">
+
+                    <span>HTML5</span>
+
+                    <span>CSS3</span>
+
+                    <span>JavaScript</span>
+
+                    <span>React.js</span>
+
+                    <span>Bootstrap</span>
+
+                    <span>Tailwind CSS</span>
+
+                    <span>Node.js</span>
+
+                    <span>MongoDB</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about" class="section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <p class="eyebrow-text">
+                        About Me
+                    </p>
+
+                    <h2 class="section-heading text-start">
+                        Turning Ideas Into
+                        Useful Web Experiences.
+                    </h2>
+
+                    <div class="heading-underline"></div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <p class="hero-para">
+
+                        I'm an MCA graduate with a strong interest in
+                        Front-End and Web Development. I enjoy creating
+                        clean, responsive and practical websites that are
+                        easy to use across different devices.
+
+                    </p>
+
+
+                    <p class="hero-para">
+
+                        My current focus is strengthening my JavaScript
+                        and React.js skills while building real-world
+                        projects using the MERN stack.
+
+                    </p>
+
+
+                    <p class="hero-para">
+
+                        I'm also interested in working with local
+                        businesses and helping them build a professional
+                        online presence through simple and effective
+                        websites.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SERVICES SECTION ================= -->
+
+    <section id="services" class="section-padding">
+
+        <div class="container text-center">
+
+            <p class="eyebrow-text">
+                What I Do
+            </p>
+
+            <h2 class="section-heading">
+                Services I Provide
+            </h2>
+
+            <div class="heading-underline mx-auto"></div>
+
+
+            <div class="row g-4 mt-4">
+
+
+                <!-- Service 1 -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-display"></i>
+                        </div>
+
+                        <h5>
+                            Website Design
+                        </h5>
+
+                        <p>
+
+                            Clean and responsive website interfaces
+                            using HTML5, CSS3, Bootstrap and modern
+                            design practices.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Service 2 -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <h5>
+                            Front-End Development
+                        </h5>
+
+                        <p>
+
+                            Responsive and interactive websites using
+                            JavaScript, React.js and reusable
+                            front-end components.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Service 3 -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+
+                        <h5>
+                            Full Stack Development
+                        </h5>
+
+                        <p>
+
+                            MERN stack applications with Node.js,
+                            Express.js, MongoDB and REST APIs.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Service 4 -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+
+                        <h5>
+                            Responsive Websites
+                        </h5>
+
+                        <p>
+
+                            Mobile-friendly layouts that provide a
+                            consistent experience across different
+                            screen sizes.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+
+    <section id="skills" class="section-padding bg-light-cream">
+
+        <div class="container text-center">
+
+            <p class="eyebrow-text">
+                My Skills
+            </p>
+
+            <h2 class="section-heading">
+                Technologies I Use
+            </h2>
+
+            <div class="heading-underline mx-auto"></div>
+
+
+            <div class="row g-4 mt-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-window"></i>
+                        </div>
+
+                        <h5>
+                            Front-End
+                        </h5>
+
+                        <p>
+                            HTML5, CSS3, JavaScript, Bootstrap,
+                            Tailwind CSS and React.js.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-server"></i>
+                        </div>
+
+                        <h5>
+                            Back-End
+                        </h5>
+
+                        <p>
+                            Node.js, Express.js and REST API
+                            development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-database"></i>
+                        </div>
+
+                        <h5>
+                            Database & Tools
+                        </h5>
+
+                        <p>
+                            MongoDB, Git, GitHub, VS Code and
+                            basic API integration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
+    <section id="projects" class="section-padding">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <p class="eyebrow-text">
+                    My Work
+                </p>
+
+                <h2 class="section-heading">
+                    Featured Projects
+                </h2>
+
+                <div class="heading-underline mx-auto"></div>
+
+            </div>
+
+
+            <!-- Project Filters -->
+
+            <div class="d-flex justify-content-center gap-2 flex-wrap my-4 filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="fullstack"
+                >
+                    Full Stack
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="frontend"
+                >
+                    Front-End
+                </button>
+
+            </div>
+
+
+
+            <div class="row g-4" id="projectRow">
+
+
+                <!-- Shram Setu -->
+
+                <div
+                    class="col-md-6 col-lg-4 project-item"
+                    data-category="fullstack"
+                >
+
+                    <div class="project-card">
+
+                        <div class="project-thumb thumb-1">
+
+                            <i class="bi bi-people"></i>
+
+                        </div>
+
+
+                        <div class="project-info">
+
+                            <h6>
+                                Shram Setu
+                            </h6>
+
+                            <p>
+                                India-focused Employment Platform
+                            </p>
+
+                            <small>
+                                MERN Stack
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- AVSAR -->
+
+                <div
+                    class="col-md-6 col-lg-4 project-item"
+                    data-category="fullstack"
+                >
+
+                    <div class="project-card">
+
+                        <div class="project-thumb thumb-2">
+
+                            <i class="bi bi-heart"></i>
+
+                        </div>
+
+
+                        <div class="project-info">
+
+                            <h6>
+                                AVSAR
+                            </h6>
+
+                            <p>
+                                Animal Welfare Reporting Platform
+                            </p>
+
+                            <small>
+                                MERN Stack
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Zaayaka -->
+
+                <div
+                    class="col-md-6 col-lg-4 project-item"
+                    data-category="frontend"
+                >
+
+                    <div class="project-card">
+
+                        <div class="project-thumb thumb-3">
+
+                            <i class="bi bi-shop"></i>
+
+                        </div>
+
+
+                        <div class="project-info">
+
+                            <h6>
+                                Zaayaka
+                            </h6>
+
+                            <p>
+                                Restaurant Website
+                            </p>
+
+                            <small>
+                                HTML, CSS, Bootstrap & JavaScript
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROCESS SECTION ================= -->
+
+    <section id="process" class="section-padding bg-light-cream">
+
+        <div class="container text-center">
+
+            <p class="eyebrow-text">
+                My Process
+            </p>
+
+            <h2 class="section-heading">
+                How I Work
+            </h2>
+
+            <div class="heading-underline mx-auto"></div>
+
+
+            <div class="row mt-5 process-row">
+
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="process-step">
+
+                        <div class="process-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                        <p class="process-number">
+                            01
+                        </p>
+
+                        <h6>
+                            Discover
+                        </h6>
+
+                        <p class="process-text">
+                            Understand the goals and requirements
+                            of the project.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="process-step">
+
+                        <div class="process-icon">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+
+                        <p class="process-number">
+                            02
+                        </p>
+
+                        <h6>
+                            Plan
+                        </h6>
+
+                        <p class="process-text">
+                            Create the structure and development
+                            plan for the project.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="process-step">
+
+                        <div class="process-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+
+                        <p class="process-number">
+                            03
+                        </p>
+
+                        <h6>
+                            Design & Build
+                        </h6>
+
+                        <p class="process-text">
+                            Build responsive interfaces with clean
+                            and practical code.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="process-step">
+
+                        <div class="process-icon">
+                            <i class="bi bi-check-circle"></i>
+                        </div>
+
+                        <p class="process-number">
+                            04
+                        </p>
+
+                        <h6>
+                            Test & Launch
+                        </h6>
+
+                        <p class="process-text">
+                            Test the website and make sure it works
+                            properly across devices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CERTIFICATIONS SECTION ================= -->
+
+    <section id="certifications" class="section-padding">
+
+        <div class="container text-center">
+
+            <p class="eyebrow-text">
+                Achievements
+            </p>
+
+            <h2 class="section-heading">
+                Certifications
+            </h2>
+
+            <div class="heading-underline mx-auto"></div>
+
+
+            <div class="row g-4 mt-4">
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="cert-card">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h6>
+                            SOAR - AI to be Aware
+                        </h6>
+
+                        <p>
+                            Microsoft & NCVET / Skill India, 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="cert-card">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h6>
+                            Digital India Talk Show
+                        </h6>
+
+                        <p>
+                            NeGD, Ministry of Electronics & IT, 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="cert-card">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h6>
+                            Full Stack Development
+                        </h6>
+
+                        <p>
+                            Digital Shakha, Bhilai, 2022
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="cert-card">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h6>
+                            AI & Scientific Computing
+                        </h6>
+
+                        <p>
+                            NIT Raipur, 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STATS BANNER ================= -->
+
+    <section class="stats-banner">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+
+                <div class="col-6 col-md-3">
+
+                    <i class="bi bi-code-square"></i>
+
+                    <h3>
+                        3+
+                    </h3>
+
+                    <p>
+                        Projects Built
+                    </p>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <i class="bi bi-mortarboard"></i>
+
+                    <h3>
+                        MCA
+                    </h3>
+
+                    <p>
+                        Graduate
+                    </p>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <i class="bi bi-award"></i>
+
+                    <h3>
+                        4
+                    </h3>
+
+                    <p>
+                        Certifications
+                    </p>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <i class="bi bi-code-slash"></i>
+
+                    <h3>
+                        MERN
+                    </h3>
+
+                    <p>
+                        Stack Learning
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section id="contact" class="section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- Contact Information -->
+
+                <div class="col-lg-6">
+
+                    <p class="eyebrow-text">
+                        Let's Work Together
+                    </p>
+
+
+                    <h2 class="section-heading text-start">
+                        Have a Project in Mind?
+                    </h2>
+
+
+                    <p class="hero-para">
+
+                        Looking for a clean and responsive website
+                        for your business or project?
+
+                        Let's connect and discuss your requirements.
+
+                    </p>
+
+
+                    <ul class="contact-info-list">
+
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            maddhi.indu@gmail.com
+                        </li>
+
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            +91-7489859587
+                        </li>
+
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            Bhilai, Chhattisgarh, India
+                        </li>
+
+                        <li>
+                            <i class="bi bi-linkedin"></i>
+                            linkedin.com/in/m-indu
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Contact Form -->
+
+                <div class="col-lg-6">
+
+                    <form
+                        id="contactForm"
+                        class="contact-form"
+                    >
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nameInput"
+                                    placeholder="Your Name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="emailInput"
+                                    placeholder="Your Email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <textarea
+                                    class="form-control"
+                                    id="messageInput"
+                                    rows="4"
+                                    placeholder="Your Message"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-dark-teal"
+                                >
+
+                                    Send Message
+
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Success Message -->
+
+                        <p
+                            id="formSuccessMsg"
+                            class="mt-3 fw-semibold"
+                            style="display: none; color:#1b4b4b;"
+                        >
+                            Thanks! Your message has been noted.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="my-footer">
+        <div class="container">
+            <div class="row py-4 align-items-center">
+                <div class="col-md-4">
+
+                    <h4 class="footer-brand">
+                        Mindu.
+                    </h4>
+
+                    <p class="mb-0">
+                        Front-End & Web Developer
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-4">
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-4 text-md-end">
+
+                    <a
+                        href="https://linkedin.com/in/m-indu"
+                        class="footer-icon"
+                        target="_blank"
+                    >
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+
+                    <a
+                        href="https://github.com/MInduDev"
+                        class="footer-icon"
+                        target="_blank"
+                    >
+                        <i class="bi bi-github"></i>
+                    </a>
+
+
+                    <a
+                        href="mailto:maddhi.indu@gmail.com"
+                        class="footer-icon"
+                    >
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <hr class="footer-line">
+
+            <p class="text-center footer-copy">
+                © 2026 Mindu. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
