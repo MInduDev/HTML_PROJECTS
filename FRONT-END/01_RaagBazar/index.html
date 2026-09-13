@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raagbazaar - thoughtfully chosen instruments for every musician.">
+  <title>Raagbazaar | Find Your Sound</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home" aria-label="Raagbazaar home"><img class="brand-logo" src="img/Logo.png" alt="Raagbazaar - Find Your Sound"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li><li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li><li class="nav-item"><a class="nav-link" href="#about">About</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#shop" class="icon-button" aria-label="Search products"><i class="bi bi-search"></i></a>
+          <button class="icon-button" id="wishlistButton" aria-label="View wishlist"><i class="bi bi-heart"></i></button>
+          <button class="icon-button cart-button" data-bs-toggle="offcanvas" data-bs-target="#cartPanel" aria-label="Open cart"><i class="bi bi-bag"></i><span id="cartCount">0</span></button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="hero-content">
+            <p class="eyebrow">Instruments with a soul</p>
+            <h1>Find Your<br><em>Sound.</em></h1>
+            <p class="hero-copy">Discover instruments crafted for every rhythm, melody and musical journey.</p>
+            <div class="hero-actions">
+              <a href="#shop" class="btn btn-accent">Explore Instruments <i class="bi bi-arrow-up-right"></i></a>
+              <a href="#categories" class="btn btn-outline-custom">View Collections</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="image-note">Handpicked for<br>your next note</span>
+    </section>
+
+    <section class="section-pad categories" id="categories"><div class="container"><div class="section-heading"><div><p class="eyebrow">Browse by mood</p><h2>Made for every <em>kind</em> of music.</h2></div><a href="#shop" class="text-link">All instruments <i class="bi bi-arrow-right"></i></a></div><div class="row g-3" id="categoryGrid"></div></div></section>
+
+    <section class="section-pad shop-section" id="shop"><div class="container"><div class="section-heading"><div><p class="eyebrow">The collection</p><h2>Find the one that <em>moves</em> you.</h2></div><p class="result-count" id="resultCount"></p></div>
+      <div class="filter-bar"><div class="search-wrap"><i class="bi bi-search"></i><input id="searchInput" type="search" placeholder="Search instruments"></div><select id="categoryFilter" aria-label="Filter by category"><option value="All">All categories</option></select><select id="priceFilter" aria-label="Filter by price"><option value="all">Any price</option><option value="under5000">Under ₹5,000</option><option value="5000to15000">₹5,000 – ₹15,000</option><option value="over15000">Above ₹15,000</option></select><select id="sortFilter" aria-label="Sort products"><option value="default">Sort: Featured</option><option value="name">Name: A–Z</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></div>
+      <div class="row g-4" id="productGrid"></div></div>
+    </section>
+
+    <section class="about section-pad" id="about"><div class="container"><div class="about-inner row align-items-center g-5"><div class="col-lg-5"><p class="eyebrow">Our note</p><h2>Music has no <em>boundaries.</em></h2></div><div class="col-lg-7"><p class="about-text">Raagbazaar brings traditional Indian instruments and modern musical essentials together in one carefully curated space. We believe the right instrument does more than make sound — it makes room for your story.</p><a href="#contact" class="text-link">Meet Raagbazaar <i class="bi bi-arrow-right"></i></a></div></div></div></section>
+
+    <section class="section-pad values"><div class="container"><div class="row g-4"><div class="col-sm-6 col-lg-3"><div class="value"><i class="bi bi-patch-check"></i><h3>Authentic instruments</h3><p>Thoughtfully sourced from makers we trust.</p></div></div><div class="col-sm-6 col-lg-3"><div class="value"><i class="bi bi-stars"></i><h3>Carefully curated</h3><p>A considered edit, not an endless aisle.</p></div></div><div class="col-sm-6 col-lg-3"><div class="value"><i class="bi bi-shield-check"></i><h3>Secure shopping</h3><p>Simple, safe service from cart to doorstep.</p></div></div><div class="col-sm-6 col-lg-3"><div class="value"><i class="bi bi-soundwave"></i><h3>Made for musicians</h3><p>For first lessons, stages and every session.</p></div></div></div></div></section>
+  </main>
+
+  <footer id="contact"><div class="container"><div class="row g-4"><div class="col-lg-4"><a class="navbar-brand footer-brand" href="#home" aria-label="Raagbazaar home"><img class="brand-logo" src="img/Logo.png" alt="Raagbazaar - Find Your Sound"></a><p>Thoughtfully chosen instruments for the music waiting inside you.</p></div><div class="col-6 col-lg-2"><h4>Explore</h4><a href="#shop">Shop</a><a href="#categories">Collections</a><a href="#about">Our story</a></div><div class="col-6 col-lg-2"><h4>Categories</h4><a href="#shop">Indian Classical</a><a href="#shop">Strings</a><a href="#shop">Percussion</a></div><div class="col-lg-4"><h4>Stay in tune</h4><p>Questions or looking for an instrument?</p><a class="footer-email" href="mailto:hello@raagbazaar.in">hello@raagbazaar.in</a><div class="socials"><a href="#contact" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#contact" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#contact" aria-label="Youtube"><i class="bi bi-youtube"></i></a></div></div></div><div class="footer-bottom">© 2026 Raagbazaar. Crafted for music lovers.</div></div></footer>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartPanel"><div class="offcanvas-header"><div><p class="eyebrow mb-1">Your selection</p><h3>Shopping bag</h3></div><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div><div class="offcanvas-body d-flex flex-column"><div id="cartItems"></div><div class="cart-summary mt-auto"><div><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn btn-accent w-100">Continue to checkout <i class="bi bi-arrow-right"></i></button></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+</body>
+</html>
