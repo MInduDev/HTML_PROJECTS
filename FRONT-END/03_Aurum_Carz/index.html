@@ -1,1 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover an exceptional collection of luxury and performance automobiles at Aurum Motors.">
+  <title>Aurum Motors | Drive Beyond Limits</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid page-container">
+        <a class="navbar-brand brand-lockup" href="#home" aria-label="Aurum Motors home">
+          <span class="brand-mark"><i class="bi bi-shield-shaded"></i><span>A</span></span>
+          <span class="brand-name">AURUM<small>M O T O R S</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#cars" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Cars</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#cars">Featured Collection</a></li>
+                <li><a class="dropdown-item" href="#search">Find Your Car</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#brands" role="button" data-bs-toggle="dropdown" aria-expanded="false">Brands</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#brands">Explore Marques</a></li>
+                <li><a class="dropdown-item" href="#cars">All Vehicles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#showroom">Showroom</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="icon-button" id="navSearchButton" aria-label="Go to car search"><i class="bi bi-search"></i></button>
+            <button class="icon-button" id="navWishlistButton" aria-label="Show saved cars"><i class="bi bi-heart"></i></button>
+            <a class="button button-outline nav-cta" href="#contact">Book Test Drive <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-image" id="heroImage"></div>
+      <div class="hero-shade"></div>
+      <div class="container-fluid page-container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium Automotive Experience <span></span></p>
+          <h1>Drive the<br><span>Extraordinary</span></h1>
+          <p class="hero-description">Experience luxury, performance and innovation<br class="desktop-break"> with Aurum Motors.</p>
+          <div class="hero-buttons">
+            <a class="button button-light" href="#cars">Explore Collection <i class="bi bi-arrow-right"></i></a>
+            <button class="video-button" id="watchVideoButton"><span><i class="bi bi-play-fill"></i></span> Watch Video</button>
+          </div>
+        </div>
+
+        <div class="hero-pagination">
+          <button id="heroPrevious" aria-label="Previous featured car"><i class="bi bi-chevron-up"></i></button>
+          <div><strong id="heroSlideNumber">01</strong><span> / 03</span></div>
+          <button id="heroNext" aria-label="Next featured car"><i class="bi bi-chevron-down"></i></button>
+        </div>
+
+        <a href="#search" class="scroll-cue"><span><i class="bi bi-mouse"></i></span> Scroll Down</a>
+      </div>
+    </section>
+
+    <section class="search-section" id="search">
+      <div class="search-bar">
+        <div class="search-intro"><i class="bi bi-car-front"></i><span>Find Your Dream Car</span></div>
+        <label class="visually-hidden" for="brandFilter">Select brand</label>
+        <select id="brandFilter" aria-label="Filter by brand">
+          <option value="all">All Brands</option>
+          <option>BMW</option>
+          <option>Mercedes-Benz</option>
+          <option>Audi</option>
+          <option>Porsche</option>
+          <option>Lamborghini</option>
+          <option>Ferrari</option>
+          <option>Rolls-Royce</option>
+          <option>Bentley</option>
+        </select>
+        <label class="visually-hidden" for="typeFilter">Select car type</label>
+        <select id="typeFilter" aria-label="Filter by car type">
+          <option value="all">All Types</option>
+          <option value="Sports Car">Sports Car</option>
+          <option value="Supercar">Supercar</option>
+          <option value="Luxury Sedan">Luxury Sedan</option>
+          <option value="SUV">SUV</option>
+          <option value="Coupe">Coupe</option>
+        </select>
+        <label class="visually-hidden" for="priceFilter">Select price range</label>
+        <select id="priceFilter" aria-label="Filter by price range">
+          <option value="all">Price Range</option>
+          <option value="under1">Under ₹1 Crore</option>
+          <option value="1to2">₹1–2 Crore</option>
+          <option value="2to3">₹2–3 Crore</option>
+          <option value="above3">Above ₹3 Crore</option>
+        </select>
+        <button class="button button-light search-submit" id="searchCarsButton">Search Cars <i class="bi bi-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <section class="section collection-section" id="cars">
+      <div class="container-fluid page-container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured Collection <span></span></p>
+            <h2>Luxury Redefined</h2>
+          </div>
+          <button class="button button-outline" id="viewAllCars">View All Cars <i class="bi bi-arrow-right"></i></button>
+        </div>
+        <div class="row g-3 car-grid" id="carGrid">
+          <div class="col-12 col-sm-6 col-xl-3 car-column">
+            <article class="car-card" data-brand="BMW" data-type="Sports Car" data-price="1.62">
+              <div class="car-image-wrap">
+                <img src="Assets/BMW-M4.png" alt="Black BMW performance coupe" class="car-image" loading="lazy">
+                <button class="wishlist-button" aria-label="Save BMW M4 Competition"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="car-details">
+                <div><p class="car-brand">BMW</p><h3>M4 Competition</h3></div>
+                <button class="round-arrow car-detail-button" aria-label="View BMW M4 details"><i class="bi bi-arrow-right"></i></button>
+                <p class="car-price">₹ 1.62 Cr</p>
+                <div class="car-specs"><span><i class="bi bi-speedometer2"></i> 510 HP</span><span><i class="bi bi-stopwatch"></i> 3.9s</span><span><i class="bi bi-speedometer"></i> 305 km/h</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 car-column">
+            <article class="car-card" data-brand="Mercedes-Benz" data-type="Sports Car" data-price="2.45">
+              <div class="car-image-wrap">
+                <img src="Assets/Mercedes-AMG GT R.png" alt="Black Mercedes-Benz luxury performance car" class="car-image" loading="lazy">
+                <button class="wishlist-button" aria-label="Save Mercedes AMG GT R"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="car-details">
+                <div><p class="car-brand">Mercedes-Benz</p><h3>AMG GT R</h3></div>
+                <button class="round-arrow car-detail-button" aria-label="View Mercedes AMG GT R details"><i class="bi bi-arrow-right"></i></button>
+                <p class="car-price">₹ 2.45 Cr</p>
+                <div class="car-specs"><span><i class="bi bi-speedometer2"></i> 585 HP</span><span><i class="bi bi-stopwatch"></i> 3.6s</span><span><i class="bi bi-speedometer"></i> 318 km/h</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 car-column">
+            <article class="car-card" data-brand="Audi" data-type="Supercar" data-price="2.30">
+              <div class="car-image-wrap">
+                <img src="Assets/Audi R8 Coupe.png" alt="Dark Audi sports coupe" class="car-image" loading="lazy">
+                <button class="wishlist-button" aria-label="Save Audi R8 Coupe"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="car-details">
+                <div><p class="car-brand">Audi</p><h3>R8 Coupe</h3></div>
+                <button class="round-arrow car-detail-button" aria-label="View Audi R8 details"><i class="bi bi-arrow-right"></i></button>
+                <p class="car-price">₹ 2.30 Cr</p>
+                <div class="car-specs"><span><i class="bi bi-speedometer2"></i> 602 HP</span><span><i class="bi bi-stopwatch"></i> 3.2s</span><span><i class="bi bi-speedometer"></i> 330 km/h</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 car-column">
+            <article class="car-card" data-brand="Porsche" data-type="Sports Car" data-price="3.21">
+              <div class="car-image-wrap">
+                <img src="Assets/Porsche 911 Turbo S.png" alt="Black Porsche 911 sports car" class="car-image" loading="lazy">
+                <button class="wishlist-button" aria-label="Save Porsche 911 Turbo S"><i class="bi bi-heart"></i></button>
+              </div>
+              <div class="car-details">
+                <div><p class="car-brand">Porsche</p><h3>911 Turbo S</h3></div>
+                <button class="round-arrow car-detail-button" aria-label="View Porsche 911 details"><i class="bi bi-arrow-right"></i></button>
+                <p class="car-price">₹ 3.21 Cr</p>
+                <div class="car-specs"><span><i class="bi bi-speedometer2"></i> 640 HP</span><span><i class="bi bi-stopwatch"></i> 2.7s</span><span><i class="bi bi-speedometer"></i> 330 km/h</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="empty-message" id="emptyMessage" hidden>No vehicles match those filters. Try another combination.</p>
+        <p class="sample-note">Vehicle specifications and prices are illustrative sample information.</p>
+      </div>
+    </section>
+
+    <section class="brands-section" id="brands">
+      <div class="container-fluid page-container brands-layout">
+        <div class="brands-title">
+          <p class="eyebrow">Explore Brands <span></span></p>
+          <h2>Iconic<br>Marques</h2>
+        </div>
+        <div class="brand-list">
+          <button class="brand-item" data-brand="BMW"><span class="brand-wordmark bmw-mark">BMW</span><small>BMW</small></button>
+          <button class="brand-item" data-brand="Mercedes-Benz"><span class="brand-wordmark mercedes-mark">✧</span><small>Mercedes-Benz</small></button>
+          <button class="brand-item" data-brand="Audi"><span class="brand-wordmark audi-mark">AUDI</span><small>Audi</small></button>
+          <button class="brand-item" data-brand="Porsche"><span class="brand-wordmark porsche-mark">PORSCHE</span><small>Porsche</small></button>
+          <button class="brand-item brand-unlisted" data-brand="Lamborghini"><span class="brand-wordmark">L</span><small>Lamborghini</small></button>
+          <button class="brand-item brand-unlisted" data-brand="Ferrari"><span class="brand-wordmark">F</span><small>Ferrari</small></button>
+          <button class="brand-item brand-unlisted" data-brand="Rolls-Royce"><span class="brand-wordmark">RR</span><small>Rolls-Royce</small></button>
+          <button class="brand-item brand-unlisted" data-brand="Bentley"><span class="brand-wordmark">B</span><small>Bentley</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="Assets/Midnight-Lamborghini.png" alt="Luxury supercar in a dramatic dark setting" loading="lazy">
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">About Aurum Motors <span></span></p>
+        <h2>Why Choose Aurum?</h2>
+        <p class="about-description">We bring you a curated selection of the world's most prestigious automobiles, backed by exceptional service and an unparalleled driving experience.</p>
+        <div class="service-features">
+          <div><i class="bi bi-gem"></i><span>Premium<br>Selection</span></div>
+          <div><i class="bi bi-shield-check"></i><span>Trusted<br>Service</span></div>
+          <div><i class="bi bi-headset"></i><span>Dedicated<br>Support</span></div>
+          <div><i class="bi bi-star"></i><span>Exclusive<br>Experience</span></div>
+        </div>
+        <a href="#contact" class="button button-light">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="experience-section" id="showroom">
+      <div class="showroom-panel">
+        <div class="showroom-copy">
+          <p class="eyebrow">Our Showroom <span></span></p>
+          <h2>Experience Luxury<br>Up Close.</h2>
+          <p>Step into our state-of-the-art showroom and explore excellence in every detail.</p>
+          <a href="#contact" class="button button-outline">Visit Showroom <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="showroom-image">
+          <img src="Assets/BG-img.png" alt="Modern luxury automotive showroom" loading="lazy">
+        </div>
+      </div>
+
+      <div class="testimonial-panel">
+        <p class="eyebrow">Testimonials <span></span></p>
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-content" id="testimonialContent">
+          <p class="testimonial-quote">“Aurum Motors made my dream car experience absolutely unforgettable. The service is beyond exceptional.”</p>
+          <div class="customer-info">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Sample customer portrait" loading="lazy">
+            <div><strong>Priya Sharma</strong><span>Sample Customer</span></div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <div class="testimonial-dots" id="testimonialDots">
+            <button class="active" data-index="0" aria-label="Show sample testimonial 1"></button>
+            <button data-index="1" aria-label="Show sample testimonial 2"></button>
+            <button data-index="2" aria-label="Show sample testimonial 3"></button>
+          </div>
+          <div class="testimonial-arrows">
+            <button id="testimonialPrevious" aria-label="Previous testimonial"><i class="bi bi-chevron-left"></i></button>
+            <button id="testimonialNext" aria-label="Next testimonial"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+        <p class="sample-note">Illustrative testimonials for layout preview.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container-fluid page-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand-lockup" href="#home">
+            <span class="brand-mark"><i class="bi bi-shield-shaded"></i><span>A</span></span>
+            <span class="brand-name">AURUM<small>M O T O R S</small></span>
+          </a>
+          <p>Drive Beyond Limits.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a><a href="#cars">Our Cars</a><a href="#brands">Brands</a><a href="#showroom">Showroom</a><a href="#about">About</a><a href="#contact">Contact</a>
+        </div>
+        <div class="footer-column contact-column">
+          <h3>Contact Us</h3>
+          <a href="tel:+919876543210"><i class="bi bi-telephone"></i> +91 98765 43210</a>
+          <a href="mailto:info@aurummotors.com"><i class="bi bi-envelope"></i> info@aurummotors.com</a>
+          <span><i class="bi bi-geo-alt"></i> New Delhi, India</span>
+        </div>
+        <div class="footer-column social-column">
+          <h3>Stay Connected</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-column newsletter-column">
+          <h3>Subscribe to our newsletter</h3>
+          <form id="newsletterForm" class="newsletter-form">
+            <label class="visually-hidden" for="newsletterEmail">Your email address</label>
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+          </form>
+          <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> Aurum Motors. All rights reserved.</p>
+        <div><a href="#contact">Privacy Policy</a><a href="#contact">Terms &amp; Conditions</a><a href="#top">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content luxury-modal">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="videoModalTitle">The Aurum Experience</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-video-image"><i class="bi bi-play-circle"></i></div>
+          <p>Discover a world where performance meets craftsmanship. Contact our team to arrange a personal showroom experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="carModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content luxury-modal">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="carModalTitle">Vehicle details</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="carModalBody"></div>
+        <div class="modal-footer"><a href="#contact" class="button button-light" data-bs-dismiss="modal">Enquire Now <i class="bi bi-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
