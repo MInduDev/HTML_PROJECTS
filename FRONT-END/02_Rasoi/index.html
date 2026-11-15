@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RASOI - freshly prepared favourites delivered to your doorstep.">
+  <title>RASOI | Good Food. Delivered Fresh.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("rasoiTheme");
+      document.documentElement.dataset.theme = savedTheme === "light" ? "light" : "dark";
+    } catch (error) {
+      document.documentElement.dataset.theme = "dark";
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top site-nav">
+    <div class="container">
+      <a class="brand" href="#home" aria-label="RASOI home">
+        <img class="brand-logo" src="assets/LOGO.png" alt="RASOI logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#menu">Explore Menu</a>
+          <a class="nav-link" href="#how">How It Works</a>
+          <a class="nav-link" href="#offers">Offers</a>
+          <a class="nav-link" href="#footer">Contact</a>
+        </div>
+        <div class="nav-tools">
+          <button class="location-pill" type="button"><span>📍</span> Hyderabad <span>⌄</span></button>
+          <label class="nav-search"><span>⌕</span><input id="navSearch" type="search" placeholder="Search for food..." aria-label="Search for food"></label>
+          <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch color theme"><span id="themeIcon">☼</span></button>
+          <button id="cartBtn" class="cart-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPanel" aria-label="Open shopping cart">🛒<span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
+  <main>
+    <header class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Delicious food, anytime anywhere <span></span></p>
+        <h1>Good Food.<br><em>Delivered Fresh.</em></h1>
+        <p class="hero-text">From local favourites to global cuisines — get your favourite food delivered at your doorstep.</p>
+        <form class="delivery-search" id="deliveryForm">
+          <span class="pin">●</span>
+          <input id="deliveryLocation" type="text" placeholder="Enter your delivery location" aria-label="Delivery location">
+          <button class="primary-btn" type="submit">Find Food <span>→</span></button>
+        </form>
+        <a class="explore-link" href="#menu"><span>▶</span> Explore Menu</a>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Fresh chicken biryani served in a traditional bowl"></div>
+    </header>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading">
+        <span></span><div><h2>Browse Categories</h2><p>Explore our delicious food categories</p></div><span></span>
+      </div>
+      <div class="category-list container">
+        <button class="category-card" data-category="Indian"><img src="assets/Indian.png" alt="Indian curry"><span>Indian <b>→</b></span></button>
+        <button class="category-card" data-category="Pizza"><img src="assets/Fresh Pizza.png" alt="Fresh pizza"><span>Pizza <b>→</b></span></button>
+        <button class="category-card" data-category="Burgers"><img src="assets/Burger.png" alt="Burger"><span>Burgers <b>→</b></span></button>
+        <button class="category-card" data-category="Desserts"><img src="assets/Chocolate-Lava-Cake.png" alt="Chocolate dessert"><span>Desserts <b>→</b></span></button>
+        <button class="category-card" data-category="Healthy"><img src="assets/Fruit Smoothie Bowl.png" alt="Fresh salad"><span>Healthy <b>→</b></span></button>
+        <button class="category-card" data-category="Beverages"><img src="assets/Smoothie.png" alt="Fresh smoothie"><span>Beverages <b>→</b></span></button>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="menu-top">
+          <div class="menu-intro">
+            <span class="small-label">OUR MENU</span>
+            <h2 id="menuIntroTitle">Popular<br>Dishes</h2>
+            <p>Choose a category to explore exactly 10 dishes.</p>
+            <button id="backToCategories" class="outline-btn" type="button">← Back to Categories</button>
+          </div>
+          <div class="menu-content">
+            <div class="dark-menu-heading">
+              <span>OUR SPECIAL MENU</span>
+              <h2 id="menuTitle">Popular Dishes</h2>
+              <p id="menuDescription">Handpicked favourites, just for you.</p>
+              <small id="menuCount">60 dishes available</small>
+            </div>
+            <div class="menu-header-row">
+              <div>
+                <h2 id="menuTitleLight"> <span id="menuTitleLightText">Popular Dishes</span></h2>
+                <p id="menuDescriptionLight">Handpicked favourites, just for you.</p>
+              </div>
+              <span id="menuCountLight" class="menu-count">60 dishes available</span>
+            </div>
+            <div class="menu-controls">
+              <label class="menu-search"><span>⌕</span><input id="menuSearch" type="search" placeholder="Search dishes..." aria-label="Search dishes"></label>
+              <select id="foodType" aria-label="Filter by food type"><option value="All">All</option><option value="Veg">Veg</option><option value="Non-Veg">Non-Veg</option></select>
+              <select id="sortMenu" aria-label="Sort dishes"><option value="popular">Popular</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Rating</option></select>
+              <button id="clearFilters" class="filter-clear" type="button">Clear Filters</button>
+            </div>
+            <div id="productGrid" class="product-grid"></div>
+            <p id="noResults" class="no-results" hidden>No dishes match your search or filters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="promo-benefits container">
+    <section class="promo-section" id="offers">
+      <div class="promo-copy"><span class="promo-tag">Special Offer</span><h2>Flat 40% OFF</h2><p>on your first order</p><small>Use Code: <b>RASOI40</b></small></div>
+      <button class="primary-btn promo-btn" id="offerButton" type="button">Order Now →</button>
+      <div class="promo-photo" role="img" aria-label="Freshly baked pizza"></div>
+    </section>
+
+    <section class="benefits">
+      <div class="section-heading"><span></span><div><h2>Why Choose RASOI?</h2></div><span></span></div>
+      <div class="benefit-grid">
+        <div class="benefit"><i>⌁</i><h3>Fast Delivery</h3><p>In 30 mins*</p></div>
+        <div class="benefit"><i>✦</i><h3>Fresh & Hygienic</h3><p>Quality food</p></div>
+        <div class="benefit"><i>▣</i><h3>Secure Payments</h3><p>Demo checkout</p></div>
+        <div class="benefit"><i>★</i><h3>Best Offers</h3><p>Everyday</p></div>
+      </div>
+    </section>
+    </div>
+
+    <section class="how-section" id="how">
+      <div class="container">
+        <div class="section-heading"><span></span><div><h2>How It Works</h2><p>Ordering is just 3 simple steps</p></div><span></span></div>
+        <div class="how-grid">
+          <div class="how-step"><b>1</b><span class="how-icon">⌕</span><div><h3>Search</h3><p>Find your favourite food</p></div></div>
+          <span class="step-arrow">→</span>
+          <div class="how-step"><b>2</b><span class="how-icon">🛒</span><div><h3>Add to Cart</h3><p>Pick and add items</p></div></div>
+          <span class="step-arrow">→</span>
+          <div class="how-step"><b>3</b><span class="how-icon">♧</span><div><h3>Track & Enjoy</h3><p>Get it delivered hot!</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#home" aria-label="RASOI home"><img class="brand-logo footer-logo" src="assets/LOGO.png" alt="RASOI logo"></a><p>Good Food. Delivered Fresh.</p><div class="socials"><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="Instagram">◎</a><a href="#footer" aria-label="YouTube">▶</a><a href="#footer" aria-label="X">𝕏</a></div></div>
+      <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#menu">Explore Menu</a><a href="#offers">Offers</a><a href="#footer">Contact</a></div>
+      <div><h3>Help</h3><a href="#footer">FAQs</a><a href="#tracking" id="footerTrack">Track Order</a><a href="#footer">Privacy Policy</a><a href="#footer">Terms & Conditions</a></div>
+      <div><h3>Our Locations</h3><p>⌖ &nbsp; Hyderabad</p><p>⌖ &nbsp; Pune</p><p>✉ &nbsp; hello@rasoi.demo</p></div>
+      <div class="newsletter"><h3>Subscribe to our Newsletter</h3><p>Get exclusive offers & food updates!</p><form id="newsletterForm"><input type="email" placeholder="Enter your email" required aria-label="Email address"><button type="submit">➤</button></form><small id="newsletterMessage"></small></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 RASOI. All rights reserved.</span><span>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</span><span>UPI &nbsp; VISA &nbsp; ● Secure Demo Checkout</span></div></div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end cart-panel" tabindex="-1" id="cartPanel">
+    <div class="offcanvas-header"><h2>Your Cart <span id="cartTitleCount">(0)</span></h2><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+    <div class="offcanvas-body d-flex flex-column"><div id="cartItems" class="cart-items flex-grow-1"></div><div class="cart-summary"><p><span>Subtotal</span><b id="subtotal">₹0</b></p><p><span>Delivery Fee</span><b id="deliveryFee">₹40</b></p><p><span>Tax (5%)</span><b id="tax">₹0</b></p><hr><h3><span>Total</span><b id="grandTotal">₹0</b></h3><button class="primary-btn w-100" id="checkoutButton" type="button">Proceed to Checkout →</button></div></div>
+  </div>
+
+  <div class="modal fade" id="checkoutModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content custom-modal"><div class="modal-header"><h2>Delivery Details</h2><button class="btn-close" data-bs-dismiss="modal"></button></div><form id="checkoutForm"><div class="modal-body"><label>Full Name<input name="name" required minlength="2" placeholder="Your name"></label><label>Phone Number<input name="phone" required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></label><label>Delivery Address<textarea name="address" required minlength="8" placeholder="House no., street, area"></textarea></label><label>Landmark (optional)<input name="landmark" placeholder="Nearby landmark"></label><label>Payment Method<select name="payment"><option>Cash on Delivery</option><option>UPI (demo only)</option></select></label><div class="checkout-total"><span>Amount payable</span><b id="checkoutTotal">₹0</b></div><p class="demo-note">Demo checkout only. No real payment will be collected.</p></div><div class="modal-footer"><button class="primary-btn w-100" type="submit">Confirm Demo Order</button></div></form></div></div>
+  </div>
+
+  <div class="modal fade" id="confirmationModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content custom-modal text-center p-4"><div class="success-icon">✓</div><h2>Order placed!</h2><p id="confirmationText">Your demo order has been created.</p><p class="demo-note">This is a frontend simulation, not a live restaurant order.</p><button class="primary-btn" id="trackOrderButton" type="button">Track Your Order →</button></div></div>
+  </div>
+
+  <div class="modal fade" id="trackingModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content custom-modal p-3"><div class="modal-header"><div><h2>Track Your Order</h2><small id="trackingOrderId">Demo order</small></div><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p class="demo-note">Simulated order progress — no live GPS connection.</p><div class="tracking-list" id="trackingList"></div><p class="tracking-status" id="trackingStatus"></p></div></div></div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="siteToast" class="toast" role="status"><div class="toast-body" id="toastText">Added to cart</div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

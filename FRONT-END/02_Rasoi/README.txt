@@ -1,0 +1,1 @@
+Food photography assets are cropped from the two Dabba Dash UI reference images supplied in this conversation. The same local photos are used in both themes; the hero background has separate light and dark crops.
